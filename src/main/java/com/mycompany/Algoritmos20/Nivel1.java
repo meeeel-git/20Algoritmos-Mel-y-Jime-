@@ -15,19 +15,16 @@ public class Nivel1 {
     //Ejercicios hechos por: Jimena Rodríguez
     //Ejercicio número 3
     int[] numeros = new int[8];
+    char[] caracteres = {'H', 'o', 'l', 'a'};
 
     public void PedirNumeros() {
-        System.out.println(
-                "ingrese los 8 números enteros");
+        System.out.println("ingrese los 8 números enteros");
         Scanner teclado = new Scanner(System.in);
-        int numero = teclado.nextInt();
 
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("Ingrese el número:" + (i + 1));
             numeros[i] = teclado.nextInt();
-
         }
-
     }
 
     public void MostrarNumeros() {
@@ -36,16 +33,11 @@ public class Nivel1 {
             System.out.println(numeros[i]);
         }
     }
-    
-    //Ejercicio número 4
-    char[] caracteres = {'H', 'o', 'l', 'a'};
-    public void MostrarCaracter(){
+
+    //Ejercicio numero 4
+    public void MostrarCaracter() {
         for (int i = 0; i < caracteres.length; i++) {
             System.out.println(caracteres[i]);
         }
-    }
-
-    void ContarCaracteres() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

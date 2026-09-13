@@ -15,7 +15,6 @@ public class Nivel5 {
         System.out.println("--- Verificar orden ---");
         int[] arreglo = {5, 12, 18, 25, 30};
         boolean ordenado = true;
-
         for (int i = 0; i < arreglo.length - 1; i++) {
             if (arreglo[i] > arreglo[i + 1]) {
                 ordenado = false;
@@ -24,12 +23,11 @@ public class Nivel5 {
         System.out.println("¿Esta ordenado?: " + ordenado);
     }
 
-    // Ejercicio 20
+    //Ejercicio 20
     public void esCapicua() {
         System.out.println("\n--- Verificar capicua ---");
         int[] arreglo = {1, 4, 6, 4, 1};
         boolean capicua = true;
-
         for (int i = 0; i < arreglo.length / 2; i++) {
             int posicionSimetrica = arreglo.length - 1 - i;
             if (arreglo[i] != arreglo[posicionSimetrica]) {
